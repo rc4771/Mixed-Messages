@@ -6,3 +6,4 @@ A program to predict scores of random football/soccer games in the Premier Leagu
   
 ## Technologies used:
   - JavaScript ES6
+  - Node.js
