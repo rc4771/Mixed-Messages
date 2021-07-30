@@ -2,14 +2,19 @@ const teams = ["Arsenal", "Aston Villa", "Brentford", "Brighton", "Burnley", "Ch
                 "Newcastle United", "Norwich City", "Southampton", "Tottenham Hotspur", "Watford", "West Ham", "Wolves"];
 
 function getMatchDay() {
-    const matchDay = [];
     const home = teams[Math.floor(Math.random() * teams.length)];
     const away = teams[Math.floor(Math.random() * teams.length)];
     while (home === away) {
         away = teams[Math.floor(Math.random() * teams.length)];
     }
-    matchDay.push(home, away);
-    return matchDay;
+    return [home, away];
+}
+
+function getScore() {
+    const homeGoals = Math.floor(Math.random() * 11);
+    const awayGoals = Math.floor(Math.random() * 11);
+    return [homeGoals, awayGoals];
 }
 
 console.log(getMatchDay());
+console.log(getScore());
